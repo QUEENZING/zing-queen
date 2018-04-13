@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		a{
+			text-decoration: none;
+		}
+		ul,li{
+			list-style: none;
+		}
+		div,ul,li,img{
+			padding: 0;
+			margin:0;
+		}
+		.wrap{
+			width: 960px;
+			height: 550px;
+			margin:50px auto;
+			background-color: pink;
+		}
+		.wrap ul{
+			padding-top: 25px;
+			margin-left: 5px;
+		}
+		.wrap ul li{
+			width: 180px;
+			height: 105px;
+			background:rgba(0,0,0,.5);
+			float: left;
+			margin:30px 5px;
+			position: relative;
+			
+		}
+		.wrap ul li:before,.wrap ul li:after{
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: 100%;
+			height: 100%;
+			background:rgba(0,0,0,.5);
+			display: inline-block;
+			transform: rotate(60deg);
+		}
+		.wrap ul li:after{
+			transform:rotate(-60deg);
+		}
+		.wrap ul li:hover img{
+			transform: rotate(360deg) scale(1.3);
+		}
+		img{
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			transition: all 1s;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<ul>
+			<li><img src="img/1.jpg" alt=""></li>
+			<li><img src="img/2.jpg" alt=""></li>
+			<li><img src="img/3.jpg" alt=""></li>
+			<li><img src="img/4.jpg" alt=""></li>
+			<li><img src="img/5.jpg" alt=""></li>
+			<li style="margin-left: 100px;"><img src="img/6.jpg" alt=""></li>
+			<li><img src="img/7.jpg" alt=""></li>
+			<li><img src="img/8.jpg" alt=""></li>
+			<li><img src="img/9.jpg" alt=""></li>
+			<li><img src="img/10.jpg" alt=""></li>
+			<li><img src="img/11.jpg" alt=""></li>
+			<li><img src="img/12.jpg" alt=""></li>
+			<li><img src="img/13.jpg" alt=""></li>
+			<li><img src="img/14.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>
